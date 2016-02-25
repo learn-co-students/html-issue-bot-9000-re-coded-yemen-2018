@@ -3,7 +3,6 @@ require 'green_onion'
 require 'capybara/rspec'
 require 'rspec'
 require 'spec_helper'
-require 'pry'
 
 describe 'index.html' do
 
@@ -28,5 +27,5 @@ describe 'index.html' do
     @comparison.percentage_diff(solution, student)
     expect(@comparison.percentage_changed).to be < @tolerance
   end
-  
+
 end
